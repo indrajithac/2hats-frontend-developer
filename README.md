@@ -1,6 +1,6 @@
 # 2Hats E-Commerce Design Test
 
-✅ Hosted: https://your-indrajithac.github.io/2hats-frontend-developer  
+✅ Hosted: https://indrajithac.github.io/2hats-frontend-developer  
 📦 Repo: https://github.com/indrajithac/2hats-frontend-developer
 
 ## Tech Used
