@@ -1,10 +1,63 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  background-color: #fafaf9;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100%;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 5.4vw, 2rem);
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3.6vw, 2.25rem);
+  font-weight: 500;
+  line-height: 140%;
+}
+
+h3 {
+  font-size: clamp(1rem, 2.3vw, 1.125rem);
+  font-weight: 400;
+  line-height: 140%;
+}
+
+h4 {
+  font-size: clamp(0.95rem, 1.6vw, 1rem);
+  font-weight: 500;
+  line-height: 140%;
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+  font-weight: 400;
+  line-height: 140%;
+  color: #444;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #F0F0F0;
 }

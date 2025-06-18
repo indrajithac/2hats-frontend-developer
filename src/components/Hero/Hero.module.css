@@ -1,0 +1,62 @@
+.heroSection {
+  position: relative;
+  background-image: url("../../assets/heroCoverWeb.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  max-height: 600px;
+  color: white;
+  animation: fadeIn 0.8s ease-in-out both;
+  padding: 4rem 0;
+}
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.heroContent {
+  width: 100%;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.36);
+  padding: 2rem;
+  backdrop-filter: blur(34px);
+  border-radius: 2px;
+}
+.heroContent h1 {
+  margin-bottom: 2rem;
+}
+.heroContent button {
+  margin-top: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 0.5rem;
+    background-position: left center;
+  }
+  .heroContent {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .heroGrid {
+    grid-template-columns: 1fr;
+    align-items: end;
+  }
+  .heroContent h1 {
+    margin-bottom: 1rem;
+  }
+}
