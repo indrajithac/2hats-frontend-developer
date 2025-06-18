@@ -5,12 +5,15 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # ✅ Required to push to gh-pages
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -21,12 +24,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # Deployment branch
-          folder: dist # Output folder
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git init
+          git remote add origin https://github.com/${{ github.repository }}
+          git checkout -b gh-pages
+          cp -r dist/* .
+          git add .
+          git commit -m "Deploy"
+          git push --force origin gh-pages
