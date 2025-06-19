@@ -1,5 +1,7 @@
 .productsSection {
   padding-top: 4rem;
+  background-image: url("../../assets/background.svg");
+  background-repeat: no-repeat;
 }
 .productsSection h1 {
   margin-bottom: 1rem;
