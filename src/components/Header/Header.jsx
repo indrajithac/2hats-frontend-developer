@@ -4,6 +4,10 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import { headerLinks } from "../../constants/constants";
 import logo from "../../assets/logo.svg";
+import search from "../../assets/icons/search.svg";
+import cart from "../../assets/icons/cart.svg";
+import wishlist from "../../assets/icons/wishlist.svg";
+import profile from "../../assets/icons/profile.svg";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -30,10 +34,11 @@ export default function Header() {
             </div>
           ))}
         </div>
-
         <div className={styles.rightIcons}>
-          <span className={styles.iconPlaceholder}>I</span>
-          <span className={styles.iconPlaceholder}>I</span>
+          <img src={search} alt="search" />
+          <img src={cart} alt="cart" />
+          <img src={wishlist} alt="wishlist" />
+          <img src={profile} alt="profile" />
         </div>
       </div>
 
@@ -42,7 +47,12 @@ export default function Header() {
         <div className={styles.logo}>
           <img className={styles.logoImg} src={logo} alt="logo" />
         </div>
-
+        <div className={styles.rightIcons}>
+          <img src={search} alt="search" />
+          <img src={cart} alt="cart" />
+          <img src={wishlist} alt="wishlist" />
+          <img src={profile} alt="profile" />
+        </div>
         <button
           className={styles.menuToggle}
           onClick={() => setToggle(!toggle)}
