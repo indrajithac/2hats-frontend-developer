@@ -10,7 +10,7 @@ function Footer() {
             <img
               src={logoWhite}
               alt="Logo"
-              className="w-[120px] h-[34px] sm:w-[220px] sm:h-[44px] object-contain"
+              className={styles.logo}
             />
             <div className={styles.footerContentSection2}>
               <div>
