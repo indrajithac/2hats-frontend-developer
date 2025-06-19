@@ -35,13 +35,12 @@
   cursor: pointer;
   transform: scale(1.03);
 }
-.productCard .overlay h3 {
+.productCard .overlay h2 {
   max-width: 100%;
-  margin-bottom: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
-.productCard .overlay .h4 {
+.productCard .overlay h4 {
   color: #b4b4b4;
 }
 

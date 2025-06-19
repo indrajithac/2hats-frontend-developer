@@ -1,0 +1,19 @@
+.projectCard img {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.projectCard h2 {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .projectCard img {
+    margin-bottom: 1rem;
+  }
+}

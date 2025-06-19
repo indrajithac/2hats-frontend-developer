@@ -1,11 +1,11 @@
 .productsSection {
-  padding: 4rem;
+  padding-top: 4rem;
 }
 .productsSection h1 {
   margin-bottom: 1rem;
 }
 .productsSection h3 {
-  max-width: 70%;
+  max-width: 65%;
   margin-bottom: 1rem;
 }
 .productGrid {
@@ -34,7 +34,7 @@
 
 @media (max-width: 768px) {
   .productsSection {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem 0;
   }
   .productsSection h1 {
     margin-bottom: 0.5rem;

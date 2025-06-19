@@ -1,0 +1,43 @@
+.indicatorWrapper {
+  margin: 1rem auto;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  z-index: 10;
+  width: fit-content;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+}
+
+.navButton:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 640px) {
+  .navButton {
+    display: block;
+  }
+  .indicatorWrapper {
+    display: none;
+  }
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 999px;
+  background-color: #393939;
+  transition: all 0.3s ease;
+}
+
+.activeDot {
+  width: 20px;
+  background-color: #111010;
+}
