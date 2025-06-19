@@ -1,5 +1,8 @@
 .projectsSection {
   padding: 4rem 0;
+  background-image: url("../../assets/background2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .buttonContainer {
   display: flex;

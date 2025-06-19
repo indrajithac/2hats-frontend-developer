@@ -54,12 +54,10 @@
   justify-content: flex-end;
   gap: 20px;
 }
-.iconPlaceholder {
-  font-size: 16px;
-  font-weight: bold;
-  color: #1e1e1e;
+.rightIcons img {
+  height: 20px;
+  width: 20px;
 }
-
 /* ===== Mobile Header ===== */
 .headerMobile {
   display: none;
