@@ -1,0 +1,51 @@
+.projectsSection {
+  padding: 4rem 0;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: end;
+  margin-top: 2rem;
+}
+.projectsSection button {
+  background: #111010;
+  color: #fafaf9;
+}
+.projectsSection h1 {
+  margin-bottom: 1rem;
+}
+.projectsSection h3 {
+  max-width: 65%;
+  margin-bottom: 1rem;
+}
+.projectGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+.projectGrid div {
+  grid-column: span 3;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 2rem 0.5rem;
+  }
+  .projectsSection h1 {
+    margin-bottom: 0.5rem;
+  }
+  .projectsSection h3 {
+    max-width: 90%;
+  }
+  .projectGrid {
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    width: 100%;
+  }
+  .projectGrid div {
+    width: 100%;
+    width: 80vw;
+  }
+}

@@ -1,13 +1,17 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import "./App.css";
+import Products from "./components/Products/Products";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      {/* Add more components here */}
+      <Products />
+      <Projects />
       <Footer />
     </>
   );

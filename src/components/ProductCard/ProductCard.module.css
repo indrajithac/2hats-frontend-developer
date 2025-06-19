@@ -1,0 +1,54 @@
+.productCard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.productCard img {
+  width: 100%;
+  height: calc(100% - 30px);
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  background-color: #111010;
+  color: white;
+  padding: 2rem;
+  border: 1px solid #fff;
+  width: 90%;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+.overlay:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.productCard .overlay h2 {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.productCard .overlay h4 {
+  color: #b4b4b4;
+}
+
+@media (max-width: 768px) {
+  .productCard {
+    aspect-ratio: 1;
+  }
+  .overlay {
+    padding: 1rem;
+  }
+}

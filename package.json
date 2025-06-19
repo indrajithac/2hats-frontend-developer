@@ -13,7 +13,8 @@
     "bootstrap": "^5.3.7",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2"
   },
   "homepage": "https://indrajithac.github.io/2hats-frontend-developer",
   "devDependencies": {
