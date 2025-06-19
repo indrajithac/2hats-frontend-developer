@@ -1,5 +1,4 @@
 import styles from "./Hero.module.css";
-import heroCoverWeb from "../../assets/heroCoverWeb.webp";
 
 function Hero() {
   return (
