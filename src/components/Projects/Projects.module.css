@@ -47,6 +47,9 @@
     scrollbar-width: none;
     width: 100%;
   }
+  .projectGrid::-webkit-scrollbar {
+    display: none;
+  }
   .projectGrid div {
     width: 100%;
     width: 80vw;
