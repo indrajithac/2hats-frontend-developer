@@ -49,6 +49,9 @@
   color: #787878;
   margin-top: 40px;
 }
+.twoSpan {
+  grid-column: 2 span;
+}
 @media (max-width: 768px) {
   .footerDiv {
     margin: 32px 0px 20px 0px;
@@ -61,8 +64,5 @@
   .footerContent {
     flex-direction: column;
     gap: 60px;
-  }
-  .twoSpan {
-    grid-column: 2 span;
   }
 }
